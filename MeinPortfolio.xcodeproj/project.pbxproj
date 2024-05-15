@@ -100,8 +100,7 @@
 				377EFD032BF3534D00F97EA5 /* RequestMethod.swift */,
 				37146A132BF366E6005B17F2 /* NetworkService.swift */,
 			);
-			name = Network;
-			path = "../New Group/Network";
+			path = Network;
 			sourceTree = "<group>";
 		};
 		377EFCFA2BF351F000F97EA5 /* Extension */ = {
