@@ -1,5 +1,5 @@
 //
-//  ProductModel.swift
+//  Product.swift
 //  MeinPortfolio
 //
 //  Created by Denny Arfansyah on 15/05/24.
