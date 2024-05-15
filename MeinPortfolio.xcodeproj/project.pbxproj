@@ -24,6 +24,7 @@
 		37A8E1F92BF50AD3009115C7 /* ProductEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1F82BF50AD3009115C7 /* ProductEndpoint.swift */; };
 		37A8E1FC2BF50FEE009115C7 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1FB2BF50FEE009115C7 /* ProductViewModel.swift */; };
 		37A8E1FE2BF5295F009115C7 /* ProductStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1FD2BF5295F009115C7 /* ProductStoreModel.swift */; };
+		37A8E2002BF5320A009115C7 /* NumberFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1FF2BF5320A009115C7 /* NumberFormatter+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		37A8E1F82BF50AD3009115C7 /* ProductEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEndpoint.swift; sourceTree = "<group>"; };
 		37A8E1FB2BF50FEE009115C7 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		37A8E1FD2BF5295F009115C7 /* ProductStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoreModel.swift; sourceTree = "<group>"; };
+		37A8E1FF2BF5320A009115C7 /* NumberFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				377EFCFB2BF3520000F97EA5 /* String+Ext.swift */,
 				377EFD052BF354AC00F97EA5 /* Collection+Ext.swift */,
+				37A8E1FF2BF5320A009115C7 /* NumberFormatter+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				37A8E1FE2BF5295F009115C7 /* ProductStoreModel.swift in Sources */,
 				37A8E1F52BF50920009115C7 /* Product.swift in Sources */,
 				377EFCEB2BF351C400F97EA5 /* MeinPortfolioApp.swift in Sources */,
+				37A8E2002BF5320A009115C7 /* NumberFormatter+Ext.swift in Sources */,
 				377EFD002BF3532600F97EA5 /* NetworkError.swift in Sources */,
 				377EFD062BF354AC00F97EA5 /* Collection+Ext.swift in Sources */,
 			);
