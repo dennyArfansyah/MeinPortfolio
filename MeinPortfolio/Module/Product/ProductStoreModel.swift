@@ -11,6 +11,7 @@ protocol ProductStoreProtocol {
     func getProducts() async throws
 }
 
+@MainActor
 final class ProductStoreModel: ObservableObject {
     
     @Published var products: [Product] = []
