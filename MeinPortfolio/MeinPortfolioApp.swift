@@ -14,7 +14,7 @@ struct MeinPortfolioApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProductsView()
                 .environmentObject(storeModel)
         }
     }

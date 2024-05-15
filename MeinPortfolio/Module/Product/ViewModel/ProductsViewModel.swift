@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol ProductsViewViewProtocol {
+    func getProducts() async
+}
+
 @MainActor
 final class ProductsViewModel: ObservableObject {
     
@@ -23,7 +27,8 @@ final class ProductsViewModel: ObservableObject {
     }
 }
 
-extension ProductsViewModel {
+extension ProductsViewModel: ProductsViewViewProtocol {
+    
     func getProducts() async {
         do {
             products = try await networkService.fetchRequest(with: ProductEndpoint.getProducts)

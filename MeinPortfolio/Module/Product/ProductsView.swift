@@ -21,6 +21,7 @@ struct ProductsView: View {
         
         List(storeModel.products) { product in
             Text(product.title)
+            Text(product.price as NSNumber, formatter: NumberFormatter.currency)
         }.task {
             await getProducts()
         }

@@ -7,7 +7,11 @@
 
 import Foundation
 
-class ProductStoreModel: ObservableObject {
+protocol ProductStoreProtocol {
+    func getProducts() async throws
+}
+
+final class ProductStoreModel: ObservableObject {
     
     @Published var products: [Product] = []
     @Published var errorMessage: String = .emptyString
@@ -19,7 +23,8 @@ class ProductStoreModel: ObservableObject {
     }
 }
 
-extension ProductStoreModel {
+extension ProductStoreModel: ProductStoreProtocol {
+    
     func getProducts() async throws {
         products = try await networkService.fetchRequest(with: ProductEndpoint.getProducts)
     }
