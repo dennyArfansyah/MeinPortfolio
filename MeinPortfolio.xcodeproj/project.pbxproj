@@ -134,9 +134,9 @@
 		37A8E1F12BF508DE009115C7 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				37A8E1FA2BF50FCA009115C7 /* ViewModel */,
 				37A8E1F42BF50920009115C7 /* ProductModel.swift */,
 				37A8E1F22BF508F1009115C7 /* ProductsView.swift */,
+				37A8E1FA2BF50FCA009115C7 /* ViewModel */,
 				37A8E1F82BF50AD3009115C7 /* ProductEndpoint.swift */,
 			);
 			path = Product;
