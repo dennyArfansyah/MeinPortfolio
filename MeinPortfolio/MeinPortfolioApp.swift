@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct MeinPortfolioApp: App {
+    
+    @StateObject private var storeModel = ProductStoreModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(storeModel)
         }
     }
 }

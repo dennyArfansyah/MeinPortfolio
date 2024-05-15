@@ -23,6 +23,7 @@
 		37A8E1F72BF50986009115C7 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1F62BF50986009115C7 /* ProductsViewModel.swift */; };
 		37A8E1F92BF50AD3009115C7 /* ProductEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1F82BF50AD3009115C7 /* ProductEndpoint.swift */; };
 		37A8E1FC2BF50FEE009115C7 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1FB2BF50FEE009115C7 /* ProductViewModel.swift */; };
+		37A8E1FE2BF5295F009115C7 /* ProductStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1FD2BF5295F009115C7 /* ProductStoreModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		37A8E1F62BF50986009115C7 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		37A8E1F82BF50AD3009115C7 /* ProductEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEndpoint.swift; sourceTree = "<group>"; };
 		37A8E1FB2BF50FEE009115C7 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		37A8E1FD2BF5295F009115C7 /* ProductStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoreModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +77,8 @@
 		377EFCE92BF351C400F97EA5 /* MeinPortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				37A8E1F02BF508D5009115C7 /* Module */,
 				377EFCF82BF351CE00F97EA5 /* Core */,
+				37A8E1F02BF508D5009115C7 /* Module */,
 				377EFCEA2BF351C400F97EA5 /* MeinPortfolioApp.swift */,
 				377EFCEC2BF351C400F97EA5 /* ContentView.swift */,
 				377EFCEE2BF351C700F97EA5 /* Assets.xcassets */,
@@ -138,6 +140,7 @@
 				37A8E1F22BF508F1009115C7 /* ProductsView.swift */,
 				37A8E1FA2BF50FCA009115C7 /* ViewModel */,
 				37A8E1F82BF50AD3009115C7 /* ProductEndpoint.swift */,
+				37A8E1FD2BF5295F009115C7 /* ProductStoreModel.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				37A8E1F32BF508F1009115C7 /* ProductsView.swift in Sources */,
 				37146A142BF366E6005B17F2 /* NetworkService.swift in Sources */,
 				377EFD042BF3534D00F97EA5 /* RequestMethod.swift in Sources */,
+				37A8E1FE2BF5295F009115C7 /* ProductStoreModel.swift in Sources */,
 				37A8E1F52BF50920009115C7 /* Product.swift in Sources */,
 				377EFCEB2BF351C400F97EA5 /* MeinPortfolioApp.swift in Sources */,
 				377EFD002BF3532600F97EA5 /* NetworkError.swift in Sources */,
