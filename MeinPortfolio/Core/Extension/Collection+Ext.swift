@@ -7,7 +7,5 @@
 
 extension Collection {
     
-    var isNotEmpty: Bool {
-        isEmpty == false
-    }
+    var isNotEmpty: Bool { isEmpty == false }
 }

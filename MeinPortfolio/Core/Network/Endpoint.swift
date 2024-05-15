@@ -17,7 +17,6 @@ protocol Endpoint {
 }
 
 extension Endpoint {
-    
     var scheme: String { "https" }
     var host: String { "fakestoreapi.com" }
     var header: [String: String]? { nil }
