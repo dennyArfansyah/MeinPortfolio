@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37146A142BF366E6005B17F2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37146A132BF366E6005B17F2 /* NetworkService.swift */; };
 		377EFCEB2BF351C400F97EA5 /* MeinPortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EFCEA2BF351C400F97EA5 /* MeinPortfolioApp.swift */; };
 		377EFCED2BF351C400F97EA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EFCEC2BF351C400F97EA5 /* ContentView.swift */; };
 		377EFCEF2BF351C700F97EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377EFCEE2BF351C700F97EA5 /* Assets.xcassets */; };
 		377EFCF22BF351C700F97EA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377EFCF12BF351C700F97EA5 /* Preview Assets.xcassets */; };
+		377EFCFC2BF3520000F97EA5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EFCFB2BF3520000F97EA5 /* String+Ext.swift */; };
+		377EFCFE2BF3523700F97EA5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EFCFD2BF3523700F97EA5 /* Endpoint.swift */; };
+		377EFD002BF3532600F97EA5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EFCFF2BF3532600F97EA5 /* NetworkError.swift */; };
+		377EFD022BF3533A00F97EA5 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EFD012BF3533A00F97EA5 /* NetworkProtocol.swift */; };
+		377EFD042BF3534D00F97EA5 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EFD032BF3534D00F97EA5 /* RequestMethod.swift */; };
+		377EFD062BF354AC00F97EA5 /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EFD052BF354AC00F97EA5 /* Collection+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37146A132BF366E6005B17F2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		377EFCE72BF351C400F97EA5 /* MeinPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeinPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377EFCEA2BF351C400F97EA5 /* MeinPortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinPortfolioApp.swift; sourceTree = "<group>"; };
 		377EFCEC2BF351C400F97EA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		377EFCEE2BF351C700F97EA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		377EFCF12BF351C700F97EA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		377EFCFB2BF3520000F97EA5 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		377EFCFD2BF3523700F97EA5 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		377EFCFF2BF3532600F97EA5 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		377EFD012BF3533A00F97EA5 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		377EFD032BF3534D00F97EA5 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		377EFD052BF354AC00F97EA5 /* Collection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 		377EFCE92BF351C400F97EA5 /* MeinPortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				377EFCF82BF351CE00F97EA5 /* Core */,
 				377EFCEA2BF351C400F97EA5 /* MeinPortfolioApp.swift */,
 				377EFCEC2BF351C400F97EA5 /* ContentView.swift */,
 				377EFCEE2BF351C700F97EA5 /* Assets.xcassets */,
@@ -65,6 +80,37 @@
 				377EFCF12BF351C700F97EA5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		377EFCF82BF351CE00F97EA5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				377EFCFA2BF351F000F97EA5 /* Extension */,
+				377EFCF92BF351D600F97EA5 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		377EFCF92BF351D600F97EA5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				377EFCFD2BF3523700F97EA5 /* Endpoint.swift */,
+				377EFCFF2BF3532600F97EA5 /* NetworkError.swift */,
+				377EFD012BF3533A00F97EA5 /* NetworkProtocol.swift */,
+				377EFD032BF3534D00F97EA5 /* RequestMethod.swift */,
+				37146A132BF366E6005B17F2 /* NetworkService.swift */,
+			);
+			name = Network;
+			path = "../New Group/Network";
+			sourceTree = "<group>";
+		};
+		377EFCFA2BF351F000F97EA5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				377EFCFB2BF3520000F97EA5 /* String+Ext.swift */,
+				377EFD052BF354AC00F97EA5 /* Collection+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377EFCFC2BF3520000F97EA5 /* String+Ext.swift in Sources */,
 				377EFCED2BF351C400F97EA5 /* ContentView.swift in Sources */,
+				377EFD022BF3533A00F97EA5 /* NetworkProtocol.swift in Sources */,
+				377EFCFE2BF3523700F97EA5 /* Endpoint.swift in Sources */,
+				37146A142BF366E6005B17F2 /* NetworkService.swift in Sources */,
+				377EFD042BF3534D00F97EA5 /* RequestMethod.swift in Sources */,
 				377EFCEB2BF351C400F97EA5 /* MeinPortfolioApp.swift in Sources */,
+				377EFD002BF3532600F97EA5 /* NetworkError.swift in Sources */,
+				377EFD062BF354AC00F97EA5 /* Collection+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
