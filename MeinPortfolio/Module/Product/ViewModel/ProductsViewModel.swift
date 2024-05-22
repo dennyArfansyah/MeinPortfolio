@@ -19,11 +19,16 @@ final class ProductsViewModel: ObservableObject {
 //    @Published var productsVM: [ProductViewModel] = [] // using ViewModel first to parsing data -> see line 31-32
     
     @Published var errorMessage: String = .emptyString
+    var errMessage: String = .emptyString
     
     private var networkService: NetworkProtocol
     
     init(networkService: NetworkProtocol = NetworkService()) {
         self.networkService = networkService
+        
+        if errorMessage.isNotEmpty {
+            
+        }
     }
 }
 
@@ -31,7 +36,7 @@ extension ProductsViewModel: ProductsViewViewProtocol {
     
     func getProducts() async {
         do {
-            products = try await networkService.fetchRequest(with: ProductEndpoint.getProducts)
+            products = try await networkService.fetchRequest(with: ProductEndpoint.get)
             
 //            let productData = try await networkService.fetchRequest(with: ProductEndpoint.getProducts) as [Product]
 //            productsVM = productData.map(ProductViewModel.init)

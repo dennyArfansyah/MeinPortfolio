@@ -8,4 +8,5 @@
 extension String {
     
     static let emptyString = ""
+    var isNotEmpty: Bool { self.isEmpty == false }
 }

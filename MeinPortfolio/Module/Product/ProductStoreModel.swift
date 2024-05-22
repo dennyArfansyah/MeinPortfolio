@@ -5,17 +5,20 @@
 //  Created by Denny Arfansyah on 16/05/24.
 //
 
-import Foundation
+import Observation
 
 protocol ProductStoreProtocol {
-    func getProducts() async throws
+    func get() async throws
+    func add(with product: ProductParam) async throws
+    func update(with product: Product) async throws
+    func delete(with id: Int) async throws
 }
 
-@MainActor
-final class ProductStoreModel: ObservableObject {
+@Observable
+final class ProductStoreModel {
     
-    @Published var products: [Product] = []
-    @Published var errorMessage: String = .emptyString
+    var products: [Product] = []
+    var errorMessage: String = .emptyString
     
     private var networkService: NetworkProtocol
     
@@ -25,8 +28,19 @@ final class ProductStoreModel: ObservableObject {
 }
 
 extension ProductStoreModel: ProductStoreProtocol {
+    func get() async throws {
+        products = try await networkService.fetchRequest(with: ProductEndpoint.get)
+    }
     
-    func getProducts() async throws {
-        products = try await networkService.fetchRequest(with: ProductEndpoint.getProducts)
+    func add(with product: ProductParam) async throws {
+        products = try await networkService.fetchRequest(with: ProductEndpoint.add(product: product))
+    }
+    
+    func update(with product: Product) async throws {
+        products = try await networkService.fetchRequest(with: ProductEndpoint.update(product: product))
+    }
+    
+    func delete(with id: Int) async throws {
+        products = try await networkService.fetchRequest(with: ProductEndpoint.delete(id: id))
     }
 }
