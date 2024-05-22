@@ -32,6 +32,8 @@
 		37A8E2002BF5320A009115C7 /* NumberFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8E1FF2BF5320A009115C7 /* NumberFormatter+Ext.swift */; };
 		37BC3E812BFE409B0060567E /* ProductsView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC3E802BFE409B0060567E /* ProductsView+Ext.swift */; };
 		37BC3E832BFE40C30060567E /* ProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC3E822BFE40C30060567E /* ProductProtocol.swift */; };
+		37BC3E872BFE476F0060567E /* ProductParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC3E862BFE476F0060567E /* ProductParam.swift */; };
+		37BC3E892BFE47B50060567E /* ProductStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC3E882BFE47B50060567E /* ProductStoreProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		37A8E1FF2BF5320A009115C7 /* NumberFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Ext.swift"; sourceTree = "<group>"; };
 		37BC3E802BFE409B0060567E /* ProductsView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsView+Ext.swift"; sourceTree = "<group>"; };
 		37BC3E822BFE40C30060567E /* ProductProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductProtocol.swift; sourceTree = "<group>"; };
+		37BC3E862BFE476F0060567E /* ProductParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductParam.swift; sourceTree = "<group>"; };
+		37BC3E882BFE47B50060567E /* ProductStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoreProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,12 +236,12 @@
 		37A8E1F12BF508DE009115C7 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				37BC3E852BFE47570060567E /* Model */,
+				37BC3E842BFE47410060567E /* Store */,
 				3743ED552BFA5AC1002FE9D8 /* Cell */,
-				37A8E1F42BF50920009115C7 /* Product.swift */,
 				37A8E1F22BF508F1009115C7 /* ProductsView.swift */,
 				37A8E1FA2BF50FCA009115C7 /* ViewModel */,
 				37A8E1F82BF50AD3009115C7 /* ProductEndpoint.swift */,
-				37A8E1FD2BF5295F009115C7 /* ProductStoreModel.swift */,
 				37BC3E802BFE409B0060567E /* ProductsView+Ext.swift */,
 				37BC3E822BFE40C30060567E /* ProductProtocol.swift */,
 			);
@@ -251,6 +255,24 @@
 				37A8E1FB2BF50FEE009115C7 /* ProductViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		37BC3E842BFE47410060567E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				37A8E1FD2BF5295F009115C7 /* ProductStoreModel.swift */,
+				37BC3E882BFE47B50060567E /* ProductStoreProtocol.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		37BC3E852BFE47570060567E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37A8E1F42BF50920009115C7 /* Product.swift */,
+				37BC3E862BFE476F0060567E /* ProductParam.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +412,7 @@
 				37A8E1F72BF50986009115C7 /* ProductsViewModel.swift in Sources */,
 				37BC3E832BFE40C30060567E /* ProductProtocol.swift in Sources */,
 				377EFD022BF3533A00F97EA5 /* NetworkProtocol.swift in Sources */,
+				37BC3E872BFE476F0060567E /* ProductParam.swift in Sources */,
 				377EFCFE2BF3523700F97EA5 /* Endpoint.swift in Sources */,
 				37A8E1F32BF508F1009115C7 /* ProductsView.swift in Sources */,
 				37146A142BF366E6005B17F2 /* NetworkService.swift in Sources */,
@@ -398,6 +421,7 @@
 				37A8E1FE2BF5295F009115C7 /* ProductStoreModel.swift in Sources */,
 				37A8E1F52BF50920009115C7 /* Product.swift in Sources */,
 				377EFCEB2BF351C400F97EA5 /* MeinPortfolioApp.swift in Sources */,
+				37BC3E892BFE47B50060567E /* ProductStoreProtocol.swift in Sources */,
 				37BC3E812BFE409B0060567E /* ProductsView+Ext.swift in Sources */,
 				37A8E2002BF5320A009115C7 /* NumberFormatter+Ext.swift in Sources */,
 				377EFD002BF3532600F97EA5 /* NetworkError.swift in Sources */,

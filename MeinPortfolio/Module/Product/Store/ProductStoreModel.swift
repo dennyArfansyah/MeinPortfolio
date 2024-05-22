@@ -7,13 +7,6 @@
 
 import Observation
 
-protocol ProductStoreProtocol {
-    func get() async throws
-    func add(with product: ProductParam) async throws
-    func update(with product: Product) async throws
-    func delete(with id: Int) async throws
-}
-
 @Observable
 final class ProductStoreModel {
     

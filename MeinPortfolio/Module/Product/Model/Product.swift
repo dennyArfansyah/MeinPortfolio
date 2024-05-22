@@ -17,10 +17,3 @@ struct Product: Decodable, Identifiable {
 }
 
 typealias Products = [Product]
-
-struct ProductParam {
-    let title: String
-    let price: Double
-    let description: String
-    let category: String
-}
