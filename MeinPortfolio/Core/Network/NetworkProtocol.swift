@@ -26,7 +26,7 @@ extension NetworkProtocol {
         var request = URLRequest(url: url)
         request.httpMethod = endpoint.method.rawValue
         request.allHTTPHeaderFields = endpoint.header
-        if let body = endpoint.body {
+        if let body = endpoint.body as? Encodable {
             request.httpBody = try? encoder.encode(body)
         }
         return request
