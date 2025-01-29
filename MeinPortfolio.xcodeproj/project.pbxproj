@@ -34,6 +34,8 @@
 		37BC3E832BFE40C30060567E /* ProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC3E822BFE40C30060567E /* ProductProtocol.swift */; };
 		37BC3E872BFE476F0060567E /* ProductParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC3E862BFE476F0060567E /* ProductParam.swift */; };
 		37BC3E892BFE47B50060567E /* ProductStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC3E882BFE47B50060567E /* ProductStoreProtocol.swift */; };
+		37CB419A2D4A73A300126269 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB41992D4A73A300126269 /* TabBarView.swift */; };
+		37CB419C2D4A745400126269 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB419B2D4A745400126269 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		37BC3E822BFE40C30060567E /* ProductProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductProtocol.swift; sourceTree = "<group>"; };
 		37BC3E862BFE476F0060567E /* ProductParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductParam.swift; sourceTree = "<group>"; };
 		37BC3E882BFE47B50060567E /* ProductStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoreProtocol.swift; sourceTree = "<group>"; };
+		37CB41992D4A73A300126269 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		37CB419B2D4A745400126269 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				37A8E1F12BF508DE009115C7 /* Product */,
+				37CB41992D4A73A300126269 /* TabBarView.swift */,
+				37CB419B2D4A745400126269 /* HomeView.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -417,6 +423,7 @@
 				37A8E1F32BF508F1009115C7 /* ProductsView.swift in Sources */,
 				37146A142BF366E6005B17F2 /* NetworkService.swift in Sources */,
 				377EFD042BF3534D00F97EA5 /* RequestMethod.swift in Sources */,
+				37CB419A2D4A73A300126269 /* TabBarView.swift in Sources */,
 				3743ED572BFA5AD0002FE9D8 /* ProductCellView.swift in Sources */,
 				37A8E1FE2BF5295F009115C7 /* ProductStoreModel.swift in Sources */,
 				37A8E1F52BF50920009115C7 /* Product.swift in Sources */,
@@ -425,6 +432,7 @@
 				37BC3E812BFE409B0060567E /* ProductsView+Ext.swift in Sources */,
 				37A8E2002BF5320A009115C7 /* NumberFormatter+Ext.swift in Sources */,
 				377EFD002BF3532600F97EA5 /* NetworkError.swift in Sources */,
+				37CB419C2D4A745400126269 /* HomeView.swift in Sources */,
 				377EFD062BF354AC00F97EA5 /* Collection+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
