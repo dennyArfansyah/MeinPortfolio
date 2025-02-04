@@ -14,8 +14,7 @@ struct MeinPortfolioApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ProductsView()
-                .environment(storeModel)
+            TabBarView()
         }
     }
 }

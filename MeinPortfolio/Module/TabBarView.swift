@@ -16,15 +16,19 @@ struct TabBarView: View {
                 }
             HomeView()
                 .tabItem {
-                    Label("Mall", systemImage: "cart.fill")
+                    Label("Search", systemImage: "magnifyingglass")
                 }
             HomeView()
                 .tabItem {
-                    Label("Transaction", systemImage: "list.clipboard.fill")
+                    Label("Bookings", systemImage: "calendar")
                 }
             HomeView()
                 .tabItem {
-                    Label("Profile", systemImage: "person.fill")
+                    Label("Message", systemImage: "message.badge")
+                }
+            HomeView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.circle.fill")
                 }
         }
     }
