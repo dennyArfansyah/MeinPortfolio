@@ -14,19 +14,19 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
-            HomeView()
+            SearchView()
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
-            HomeView()
+            BookingView()
                 .tabItem {
                     Label("Bookings", systemImage: "calendar")
                 }
-            HomeView()
+            MessageView()
                 .tabItem {
                     Label("Message", systemImage: "message.badge")
                 }
-            HomeView()
+            ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.circle.fill")
                 }
