@@ -12,23 +12,23 @@ struct TabBarView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("Home", systemImage: "house.fill")
+                    Label(TabbarLabel.home.rawValue, systemImage: TabbarSystemImage.home.rawValue)
                 }
             SearchView()
                 .tabItem {
-                    Label("Search", systemImage: "magnifyingglass")
+                    Label(TabbarLabel.search.rawValue, systemImage: TabbarSystemImage.search.rawValue)
                 }
             BookingView()
                 .tabItem {
-                    Label("Bookings", systemImage: "calendar")
+                    Label(TabbarLabel.bookings.rawValue, systemImage: TabbarSystemImage.bookings.rawValue)
                 }
             MessageView()
                 .tabItem {
-                    Label("Message", systemImage: "message.badge")
+                    Label(TabbarLabel.message.rawValue, systemImage: TabbarSystemImage.message.rawValue)
                 }
             ProfileView()
                 .tabItem {
-                    Label("Profile", systemImage: "person.circle.fill")
+                    Label(TabbarLabel.profile.rawValue, systemImage: TabbarSystemImage.profile.rawValue)
                 }
         }
     }
