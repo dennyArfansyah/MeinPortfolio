@@ -33,7 +33,9 @@ final class NetworkService: NetworkProtocol {
                         return
                     }
                     
-                    guard let decodedResponse = try? JSONDecoder().decode(T.self, from: data) else {
+                    let jsonDecoder = JSONDecoder()
+                    jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+                    guard let decodedResponse = try? jsonDecoder.decode(T.self, from: data) else {
                         continuation.resume(throwing: NetworkError.invalidDecode)
                         return
                     }
@@ -59,7 +61,10 @@ final class NetworkService: NetworkProtocol {
                 resultHandler(.failure(.unknown))
                 return
             }
-            guard let decodedResponse = try? JSONDecoder().decode(T.self, from: data) else {
+            
+            let jsonDecoder = JSONDecoder()
+            jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+            guard let decodedResponse = try? jsonDecoder.decode(T.self, from: data) else {
                 resultHandler(.failure(.invalidDecode))
                 return
             }
